@@ -36,7 +36,7 @@
 }
 ### 1.2.3 Erro do Servidor ( HTTP 500 Internal Server Error)
 Ocorre quando existem falhas inesperadas no servidor não tem relação com o cliente
-- Corpo da Resposta
+- Corpo da Resposta: <br>
 {<br>
     "mensagem": "Ocorreu um erro interno inesperado no servidor."<br>
 }
