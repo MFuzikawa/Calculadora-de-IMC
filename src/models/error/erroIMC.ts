@@ -4,7 +4,7 @@ class errorIMC extends Error {
         public statusCode: number = 400,
         public details?:any
     ){super(message);
-        this.name = 'validationError'
+        
     }
 }
 export default errorIMC
