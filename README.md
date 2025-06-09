@@ -1,4 +1,14 @@
-esse projeto é uma API que recebe a altura e o peso de uma pessoa e devolve seu IMC e sua classificação
+# Documentação da API: Calculadora de Índice de massa corporal
+###Este documento descreve o endpoint da API responsável por calcular o Índice de Massa Corporal (IMC) de uma pessoa com base em seu peso e altura.
 
-
-![{1E32C04A-8AA4-448A-A570-8EEAC5736CA2}](https://github.com/user-attachments/assets/3865c3da-e6f6-4172-afd2-4369adf62679)
+1. EndPoint: calcula IMC:
+   Rota que calcula o IMC da pessoa que informar:
+   -URL: /imc
+   -Rota: post
+  1.1. Request
+   A Requisição deve conter um corpo JSON e haver 2 linhas, uma indicando sua altura e a outra indicando seu peso.
+   - Exemplo de corpo de requisição
+    {
+    "peso": 70,
+    "altura": 1.75
+    }
