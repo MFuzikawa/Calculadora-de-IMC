@@ -8,7 +8,7 @@
  ### 1.1. Request
    A Requisição deve conter um corpo JSON e haver 2 linhas, uma indicando sua altura e a outra indicando seu peso.
    - Exemplo de corpo de requisição: <br>
-    {
-    "peso": 70,
-    "altura": 1.75
+    { <br>
+    "peso": 70, <br>
+    "altura": 1.75 <br>
     }
