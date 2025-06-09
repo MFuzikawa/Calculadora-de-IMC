@@ -13,6 +13,10 @@ calculadoraRouter.post('/imc', async (req: Request, res: Response, next: NextFun
         };
         const imcvalor: number = imc.peso / (imc.altura * imc.altura);
 
+        if ( typeof imc.altura !== 'number' || typeof imc.peso !== 'number'){
+            throw new errorIMC("Os valores devem ser numeros");
+        };
+
         if (imcvalor < 18.5) {
             classificacao = "Abaixo do peso";
         } else if (imcvalor >= 18.5 && imcvalor <= 24.9) {
@@ -30,11 +34,11 @@ calculadoraRouter.post('/imc', async (req: Request, res: Response, next: NextFun
         const resposta: Resposta = {
             imc: imcvalor,
             classificacao: classificacao
-        }
+        };
 
         res.json(resposta);
     } catch (error: any) {
-        next(error)
-    }
+        next(error);
+    };
 })
-export default calculadoraRouter
+export default calculadoraRouter;
