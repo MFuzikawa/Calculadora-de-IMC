@@ -1,5 +1,5 @@
 # Documentação da API: Calculadora de Índice de massa corporal
-###Este documento descreve o endpoint da API responsável por calcular o Índice de Massa Corporal (IMC) de uma pessoa com base em seu peso e altura.
+### Este documento descreve o endpoint da API responsável por calcular o Índice de Massa Corporal (IMC) de uma pessoa com base em seu peso e altura.
 
 1. EndPoint: calcula IMC:
    Rota que calcula o IMC da pessoa que informar:
