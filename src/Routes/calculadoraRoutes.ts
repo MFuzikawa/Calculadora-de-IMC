@@ -8,13 +8,13 @@ calculadoraRouter.post('/imc', async (req: Request, res: Response, next: NextFun
     try {
         const imc: IMC = await req.body;
         let classificacao: string = "";
-        if (imc.altura < 0 || imc.peso < 0) {
-            throw new errorIMC("não é possivel calcular imc com numeros negativos");
+        if (imc.altura <= 0 || imc.peso <= 0) {
+            throw new errorIMC("Peso e altura devem ser valores positivos e maiores que zero.");
         };
         const imcvalor: number = imc.peso / (imc.altura * imc.altura);
 
         if ( typeof imc.altura !== 'number' || typeof imc.peso !== 'number'){
-            throw new errorIMC("Os valores devem ser numeros");
+            throw new errorIMC("Os valores devem ser números");
         };
 
         if (imcvalor < 18.5) {
