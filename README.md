@@ -23,10 +23,10 @@
   ### 1.2.2 Erro do cliente (HTTP 400 Bad Request)
   ocorre quando os dados fornecidos na requisição não são as esperadas pela resposta(peso ou alltura negativos, zero ou não numericos)
   - Corpo da Resposta:<br>
-  `{<br>
+  {<br>
     "mensagem": "Peso e altura devem ser valores positivos e maiores que zero.", <br>
     "detalhes": {} <br>
-  }`<br>
+  }<br>
 
   Ou <br>
 
